@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> My Paint </title>
+  <link rel="stylesheet" type="text/css" href="style.css" media="all"/>
+  <meta charset="UTF-8">
+</head>
+<body style = 'margin:0'>
+  <div id="toolbar">
+    <div id="radius">
+      Radius <span id="radiusval"></span>
+      <div id="decradius" class="radiuscontrol">-</div>
+      <div id="incradius" class="radiuscontrol">+</div>
+    </div>
+
+    <div><input type="color" id="colors"></input></div>
+    <div id="brush" ><img class="tool" src="icons\if_17.Brush_290133.png"/></div>
+    <div id="line" ><img class="tool" src="icons\if_minus_214643.png"/></div>
+    <div id="filledrectangle"><img class="tool" src="icons\if_183_FormRectangle_183302.png"/></div>
+    <div id="rectangle"><img class="tool" src="icons\if_184_FormRectangleBorder_183523.png"/></div>
+    <div id="filledcircle"><img class="tool" src="icons\if_circle_293633.png"/></div>
+    <div id="circle"><img class="tool" src="icons\if_icon-ios7-circle-outline_211717.png"/></div>
+    <div id="eraser"><img class="tool" src="icons\if_office-17_3045440.png"/></div>
+    <div id="undo"><img class="tool" src="icons\undo.png"/></div>
+    <div id="redo"><img class="tool" src="icons\redo.png"/></div>
+    <div id="upload"><input type="file" id="file" name="file"></div>
+    <div id="save">
+      <iframe id="downloadframe" hidden=yes></iframe>
+      Save</div>
+
+      <div id="clear">Clear</div>
+    </div>
+
+  </div>
+  <canvas id="canvas"></canvas>
+  <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="brush.js"></script>
+  <script type="text/javascript" src="radius.js"></script>
+  <script type="text/javascript" src="colors.js"></script>
+  <script type="text/javascript" src="save.js"></script>
+  <script type="text/javascript" src="clear.js"></script>
+  <script type="text/javascript" src="filledRectangle.js"></script>
+  <script type="text/javascript" src="rectangle.js"></script>
+  <script type="text/javascript" src="line.js"></script>
+  <script type="text/javascript" src="circle.js"></script>
+  <script type="text/javascript" src="filledcircle.js"></script>
+  <script type="text/javascript" src="eraser.js"></script>
+  <script type="text/javascript" src="undo.js"></script>
+  <script type="text/javascript" src="redo.js"></script>
+  <script type="text/javascript" src="upload.js"></script>
+  <script
+			  src="https://code.jquery.com/jquery-3.3.1.slim.js"
+			  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+			  crossorigin="anonymous"></script>
+</body>
+</html>
