@@ -13,6 +13,10 @@ function startBrush(){
       context.fill();
       context.beginPath();
       context.moveTo(e.clientX, e.clientY);
+      if(fClone == true )
+      {
+        startClone();
+      }
     }
   }
 
@@ -24,13 +28,15 @@ function startBrush(){
 
   var disengage = function(){
     dragging = false;
-    context.beginPath()
-    cPush();
+    context.beginPath();
   }
+
 
   canvas.addEventListener('mousedown', engage);
   canvas.addEventListener('mousemove', putPoint);
   canvas.addEventListener('mouseup', disengage);
+
+
 }
 brush.addEventListener('click', function(e){
   toolsFalse();

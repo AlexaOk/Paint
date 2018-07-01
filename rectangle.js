@@ -19,6 +19,10 @@ function startRect(){
         context.moveTo(ulx, uly);
         context.strokeRect(clx, cly, ulx - clx, uly - cly);
         context.stroke();
+        if(fClone == true )
+        {
+          startClone();
+        }
         rectangle = 0;
       }
     }

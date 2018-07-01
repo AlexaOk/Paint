@@ -13,6 +13,7 @@ var fFilledCircle = false;
 var frectangle = false;
 var fFilledRectange = false;
 var fGum = false;
+var fClone=false;
 
 
 function toolsFalse()
@@ -27,6 +28,7 @@ function toolsFalse()
 }
 
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.height = 430;
+canvas.style.border = "solid";
 
 context.lineWidth = radius*2;

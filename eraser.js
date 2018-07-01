@@ -12,6 +12,10 @@ function startEraser(){
       context.fill();
       context.beginPath();
       context.moveTo(e.clientX, e.clientY);
+      if(fClone == true )
+      {
+        startClone();
+      }
     }
   }
 

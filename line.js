@@ -19,6 +19,10 @@ function startLine(){
         context.moveTo(ulx, uly);
         context.lineTo(clx, cly, ulx - clx, uly - cly);
         context.stroke();
+        if(fClone == true )
+        {
+          startClone();
+        }
         line = 0;
       }
     }

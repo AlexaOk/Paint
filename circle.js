@@ -22,6 +22,10 @@ function startCircle(){
         context.beginPath();
         context.arc(clx, cly, radius, 0, Math.PI*2);
         context.stroke();
+        if(fClone == true )
+        {
+          startClone();
+        }
         circle = 0;
       }
     }

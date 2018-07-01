@@ -22,6 +22,10 @@ function drawFilledCircle(){
         context.beginPath();
         context.arc(clx, cly, radius, 0, Math.PI*2);
         context.fill();
+        if(fClone == true )
+        {
+          startClone();
+        }
         circle = 0;
       }
     }
