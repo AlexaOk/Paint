@@ -24,7 +24,7 @@ clone.addEventListener('click', function(e){
 });
 
 function startClone(){
-  ctx.scale(-1, 1);
-  ctx.restore();
+
+//  ctx.scale(-1, 1);
   ctx.drawImage(canvas,0,0);
 }
