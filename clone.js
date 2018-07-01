@@ -10,7 +10,9 @@ clone.addEventListener('click', function(e){
 
   var newCanvas = document.createElement("canvas");
   var context2 = newCanvas.getContext('2d');
-
+  //   context2.save();
+  // context2.scale(-1, 1);
+  // context2.restore();
   newCanvas.id = 'canvas2';
   document.getElementById('canvasDiv').appendChild(newCanvas);
 
@@ -24,14 +26,18 @@ clone.addEventListener('click', function(e){
 });
 
 function startClone(){
-
-//  ctx.scale(-1, 1);
-if(fGum == true){
-      ctx.globalCompositeOperation = 'destination-in';
-      ctx.drawImage(canvas,0,0);
-}
-if(fGum == false){
+  if(fGum == true){
+    ctx.globalCompositeOperation = 'destination-in';
+    ctx.save();
+    ctx.scale(1,-1);
+    ctx.drawImage(canvas,0,canvas.height * -1, canvas2.width, canvas2.height);
+    ctx.restore();
+  }
+  if(fGum == false){
     ctx.globalCompositeOperation = 'source-over';
-  ctx.drawImage(canvas,0,0);
-}
+    ctx.save();
+    ctx.scale(1,-1);
+    ctx.drawImage(canvas,0,canvas.height * -1, canvas2.width, canvas2.height);
+    ctx.restore();
+  }
 }
