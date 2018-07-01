@@ -5,6 +5,10 @@ function handleFiles(e) {
   img.src = URL.createObjectURL(e.target.files[0]);
   img.onload = function() {
     context.drawImage(img, 10,10);
+    if(fClone == true )
+    {
+      startClone();
+    }
   }
 }
 
