@@ -26,5 +26,12 @@ clone.addEventListener('click', function(e){
 function startClone(){
 
 //  ctx.scale(-1, 1);
+if(fGum == true){
+      ctx.globalCompositeOperation = 'destination-in';
+      ctx.drawImage(canvas,0,0);
+}
+if(fGum == false){
+    ctx.globalCompositeOperation = 'source-over';
   ctx.drawImage(canvas,0,0);
+}
 }
