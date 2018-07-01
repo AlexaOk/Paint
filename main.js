@@ -14,6 +14,7 @@ var frectangle = false;
 var fFilledRectange = false;
 var fGum = false;
 var fClone=false;
+var fText = false;
 
 
 function toolsFalse()
@@ -25,6 +26,7 @@ function toolsFalse()
   frectangle = false;;
   fFilledRectange = false;
   fGum = false;
+  fText = false;
 }
 
 canvas.width = window.innerWidth;
