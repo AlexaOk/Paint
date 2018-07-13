@@ -16,7 +16,6 @@ var fGum = false;
 var fClone=false;
 var fText = false;
 
-
 function toolsFalse()
 {
   fbrush = false;

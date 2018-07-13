@@ -68,6 +68,19 @@ canvas{
   background-color: #818181;
 }
 
+#black{
+  float: right;
+  margin-right: 20px;
+  height: 30px;
+  padding: 8px;
+  background-color: #434343;
+}
+
+
+#black:hover{
+  background-color: #818181;
+}
+
 #upload{
   float: right;
   margin-right: 20px;
